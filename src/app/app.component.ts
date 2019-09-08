@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FileRestrictions } from '@progress/kendo-angular-upload';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'kendo-angular-button';
+  title = 'Upload Button';
+  myRestrictions:FileRestrictions ={
+    allowedExtensions:['.jpg', '.png']
+  };
 }
